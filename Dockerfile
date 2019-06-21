@@ -18,7 +18,7 @@ RUN cd /tmp/dhcpd-pools && \
     make check && \
     make install
 
-FROM node:lts-alpine
+FROM node:8.16-alpine
 
 WORKDIR /opt
 RUN apk --no-cache add dhcp git bash libtool && \
